@@ -178,15 +178,14 @@ footer p {
   flex-wrap: nowrap;
   flex-direction: row;
   padding-bottom: 1%;
-  width: 100%;
   margin-top: 2.5rem;
 }
     
   .tel, .tavasz, .nyar, .osz {
     width: 20%;
-    height: 78vh;
     justify-content: space-around;
     align-items: flex-start;
+    flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 1rem;
     font-size: .74rem;
