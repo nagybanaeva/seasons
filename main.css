@@ -173,31 +173,28 @@ footer p {
   
   .evszak-tarolo {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start
   align-items: flex-start;
   flex-wrap: nowrap;
   flex-direction: row;
   padding-bottom: 1%;
-  margin-top: 2.5rem;
-}
+  margin-top: 2rem;
+  }
     
   .tel, .tavasz, .nyar, .osz {
-    width: 20%;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: auto;
     padding-bottom: 1rem;
-    font-size: .74rem;
+    font-size: .65rem;
     line-height: 1.5;
   }
   
   article {
     display: block;
+    height: 20rem
   }
   
   .btn {
-   font-size: .75rem;
+   font-size: .65rem;
    width: 5rem;
   }
   
