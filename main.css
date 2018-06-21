@@ -29,6 +29,7 @@ h1 {
   text-transform: uppercase;
   color: #000;
   font-size: 1.2rem;
+  letter-spacing: 2px;
   margin: 0;
   display: table-cell;
   text-align: center;
@@ -36,7 +37,6 @@ h1 {
 }
 
 .evszak-tarolo{
-  width: 100%;
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
@@ -48,7 +48,7 @@ h1 {
 .tel, .tavasz, .nyar, .osz {
   background-color: gainsboro;
   margin: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   width: 90%;
   color: #000;
   display: flex;
@@ -63,21 +63,42 @@ h2 {
   font-weight: bold;
 }
 
-article {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-img {
-  height: 12rem;
-  max-width: 95%;
-}
-
 .evszak-tarolo i {
   display: inline-block;
   margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.telfoto{
+  background-image: url("tel.jpg"); height: 10rem; width: 10rem ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+.tavaszfoto{
+  background-image: url("tavasz.jpg"); height: 10rem; width: 10rem ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+.nyarfoto{
+  background-image: url("nyar.jpg"); height: 10rem; width: 10rem ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+.oszfoto{
+  background-image: url("osz.jpg"); height: 10rem; width: 10rem ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3rem;
 }
 
 .btn {
@@ -105,14 +126,15 @@ footer {
   height: 10%;
   background-color: #fff;
   color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: table;
   font-size: .875rem;
 }
 
 footer p {
   margin: 0;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 @media (min-width: 769px)
@@ -129,7 +151,6 @@ footer p {
   flex-wrap: wrap;
   flex-direction: row;
   width: auto;
-  padding-bottom: 1%;
   margin-top: 3rem;
   margin-bottom: 2rem;
   padding-left: 10%;
@@ -138,13 +159,7 @@ footer p {
     
   .tel, .tavasz, .nyar, .osz {
     width: 40%;
-    height: auto;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
     padding-bottom: 1rem;
-    font-size: .71rem;
-    line-height: 1.5;
   }
   
   article {
@@ -152,8 +167,7 @@ footer p {
     height: 17rem;
   }
   
-    .btn {
-   font-size: .75rem;
+  .btn {
    width: 5rem;
   }
   
@@ -168,13 +182,13 @@ footer p {
 {
 
   header {
-    height: 4.5%;
+    height: 5%;
   }
   
   .evszak-tarolo {
   display: flex;
-  justify-content: flex-start
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
   padding-bottom: 1%;
@@ -182,19 +196,14 @@ footer p {
   }
     
   .tel, .tavasz, .nyar, .osz {
-    width: auto;
+    width: 25%;
     padding-bottom: 1rem;
-    font-size: .65rem;
-    line-height: 1.5;
-  }
-  
-  article {
-    display: block;
-    height: 20rem
+    font-size: .7rem;
+    text-align: left;
   }
   
   .btn {
-   font-size: .65rem;
+   font-size: .7rem;
    width: 5rem;
   }
   
